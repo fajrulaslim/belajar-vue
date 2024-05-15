@@ -1,22 +1,32 @@
 <template>
-  Hello {{ nama }}, Selamat Datang di Vue.js
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <hr>
+  <C01DataDanMethods />
+  <hr>
+  <C02DataBinding />
+  <hr>
+  <C03TwoWayDataBinding />
+  <hr>
+  <C04ConditionalDanLoops />
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue'
+import C01DataDanMethods from './components/C01DataDanMethods.vue'
+import C02DataBinding from './components/C02DataBinding.vue'
+import C03TwoWayDataBinding from './components/C03TwoWayDataBinding.vue'
+import C04ConditionalDanLoops from './components/C04ConditionalDanLoops.vue'
 
 export default {
   name: 'App',
-  data() {
-    return {
-      nama: "Fajrul Aslim"
-    }
+  components: {
+    HelloWorld,
+    C01DataDanMethods,
+    C02DataBinding,
+    C03TwoWayDataBinding,
+    C04ConditionalDanLoops,
   }
-  // components: {
-    // HelloWorld
-  // }
 }
 </script>
 
